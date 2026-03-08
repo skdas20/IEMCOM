@@ -203,19 +203,19 @@
             <!-- Organized by & Technical Sponsor & Venue strip -->
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="mb-10">
 
-                <div class="flex flex-col md:flex-row items-start justify-center gap-10 md:gap-16 mb-8">
+                <div class="flex flex-col md:flex-row items-end justify-center gap-10 md:gap-16 mb-8 mt-2">
                     <!-- Organized By -->
                     <div class="flex flex-col items-center">
                         <p
                             class="text-[10px] md:text-xs font-heading font-bold text-white/40 uppercase tracking-[0.2em] mb-4">
                             Organized by</p>
-                        <div class="flex items-center justify-center gap-5">
+                        <div class="flex items-end justify-center gap-5 h-12 md:h-14">
                             <img src="./assets/logos/IEM_Logo-150x150.png" alt="IEM"
-                                class="h-12 md:h-14 w-auto object-contain drop-shadow-lg">
+                                class="h-full w-auto object-contain drop-shadow-lg">
                             <img src="./assets/logos/UEM_Logo-150x150.png" alt="UEM"
-                                class="h-12 md:h-14 w-auto object-contain drop-shadow-lg">
+                                class="h-full w-auto object-contain drop-shadow-lg">
                             <img src="./assets/logos/IEEE.png" alt="IEEE"
-                                class="h-12 md:h-14 w-auto object-contain drop-shadow-lg">
+                                class="h-full w-auto object-contain drop-shadow-lg">
                         </div>
                     </div>
 
@@ -224,9 +224,9 @@
                         <p
                             class="text-[10px] md:text-xs font-heading font-bold text-white/40 uppercase tracking-[0.2em] mb-4">
                             Technically Sponsored by</p>
-                        <div class="flex items-center justify-center">
+                        <div class="flex items-end justify-center h-12 md:h-14">
                             <img src="./assets/logos/UK.png" alt="IEEE UK and Ireland Section"
-                                class="h-12 md:h-14 w-auto object-contain drop-shadow-lg opacity-90 hover:opacity-100 transition-opacity">
+                                class="h-full w-auto object-contain drop-shadow-lg opacity-90 hover:opacity-100 transition-opacity">
                         </div>
                     </div>
                 </div>
@@ -358,26 +358,34 @@
                     </div>
 
                     <div
-                        class="bg-gray-50 rounded-2xl flex flex-col text-center h-[320px] relative z-10 border border-gray-100 group-hover:bg-primary/[0.02] transition-colors overflow-hidden flex-1 w-full shadow-inner">
+                        class="bg-gray-900 rounded-3xl h-[320px] relative z-10 border border-gray-100 group-hover:bg-primary/[0.02] transition-colors overflow-hidden flex-1 w-full shadow-lg group">
 
-                        <!-- Top Image Banner -->
-                        <div class="w-full h-36 relative overflow-hidden shrink-0">
+                        <!-- Full Frame Background Image -->
+                        <div class="absolute inset-0 w-full h-full">
                             <img src="./assets/logos/Inst.png" alt="Venue Cover"
-                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent"></div>
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-out opacity-90">
+                            <!-- Gradient Overlay for text readability -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-gray-900/95 via-gray-900/60 to-gray-900/20">
+                            </div>
                         </div>
 
-                        <!-- Content Below Image -->
-                        <div class="relative z-10 flex flex-col items-center p-6 flex-1">
-                            <h3 class="font-heading font-bold text-xl text-primary mb-1 mt-2">The Photovoltaic Institute
-                            </h3>
-                            <h4 class="font-heading font-semibold text-gray-500 mb-4 text-sm tracking-wide">of
-                                Île-de-France, Paris</h4>
+                        <!-- Content Overlay -->
+                        <div class="absolute inset-0 z-10 flex flex-col items-center justify-end p-8 text-center">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-cyan-500/20 backdrop-blur-md flex items-center justify-center text-cyan-400 mb-4 border border-cyan-500/30">
+                                <i class="fas fa-map-pin text-xl"></i>
+                            </div>
+                            <h3 class="font-heading font-black text-2xl text-white mb-1 drop-shadow-md">The Photovoltaic
+                                Institute</h3>
+                            <h4
+                                class="font-heading font-semibold text-cyan-100 mb-6 text-sm tracking-widest uppercase drop-shadow">
+                                of Île-de-France, Paris</h4>
 
                             <a href="https://maps.app.goo.gl/J7kvjQ8Umf8opqYa6" target="_blank"
                                 rel="noopener noreferrer"
-                                class="inline-flex items-center gap-2 text-xs font-heading font-bold text-white hover:bg-cyan-600 transition-colors uppercase tracking-widest mt-auto bg-cyan-500 px-5 py-2.5 rounded-xl shadow-md">
-                                View Maps <i class="fas fa-map-marker-alt"></i>
+                                class="inline-flex items-center gap-2 text-xs font-heading font-bold text-gray-900 hover:text-white hover:bg-cyan-500 transition-all uppercase tracking-widest bg-white px-6 py-3 rounded-xl shadow-lg hover:shadow-cyan-500/30 transform hover:-translate-y-1">
+                                View Maps <i class="fas fa-location-arrow ml-1"></i>
                             </a>
                         </div>
                     </div>
