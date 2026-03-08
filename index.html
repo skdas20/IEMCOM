@@ -358,25 +358,26 @@
                     </div>
 
                     <div
-                        class="bg-gray-50 rounded-2xl p-8 flex flex-col items-center justify-center text-center h-[260px] relative z-10 border border-gray-100 group-hover:bg-primary/[0.02] transition-colors overflow-hidden flex-1 w-full">
+                        class="bg-gray-50 rounded-2xl flex flex-col text-center h-[320px] relative z-10 border border-gray-100 group-hover:bg-primary/[0.02] transition-colors overflow-hidden flex-1 w-full shadow-inner">
 
-                        <div class="absolute inset-0 z-0 opacity-10 group-hover:opacity-20 transition-opacity duration-500"
-                            style="background-image: url('./assets/logos/Inst.png'); background-size: cover; background-position: center;">
+                        <!-- Top Image Banner -->
+                        <div class="w-full h-36 relative overflow-hidden shrink-0">
+                            <img src="./assets/logos/Inst.png" alt="Venue Cover"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent"></div>
                         </div>
 
-                        <div class="relative z-10 flex flex-col items-center">
-                            <div
-                                class="w-16 h-16 rounded-2xl bg-white shadow-md flex items-center justify-center mb-4 text-cyan-600 overflow-hidden shrink-0 mt-4 border border-gray-100">
-                                <img src="./assets/logos/Inst.png" alt="Venue Logo" class="w-full h-full object-cover">
-                            </div>
-                            <h3 class="font-heading font-bold text-xl text-primary mb-1">The Photovoltaic Institute</h3>
-                            <h4 class="font-heading font-semibold text-secondary mb-3 text-sm tracking-wide">of
+                        <!-- Content Below Image -->
+                        <div class="relative z-10 flex flex-col items-center p-6 flex-1">
+                            <h3 class="font-heading font-bold text-xl text-primary mb-1 mt-2">The Photovoltaic Institute
+                            </h3>
+                            <h4 class="font-heading font-semibold text-gray-500 mb-4 text-sm tracking-wide">of
                                 Île-de-France, Paris</h4>
 
                             <a href="https://maps.app.goo.gl/J7kvjQ8Umf8opqYa6" target="_blank"
                                 rel="noopener noreferrer"
-                                class="inline-flex items-center gap-2 text-xs font-heading font-bold text-primary hover:text-cyan-500 transition-colors uppercase tracking-widest mt-auto mb-2 bg-white/80 px-4 py-2 rounded-lg border border-gray-200">
-                                View Maps <i class="fas fa-arrow-right"></i>
+                                class="inline-flex items-center gap-2 text-xs font-heading font-bold text-white hover:bg-cyan-600 transition-colors uppercase tracking-widest mt-auto bg-cyan-500 px-5 py-2.5 rounded-xl shadow-md">
+                                View Maps <i class="fas fa-map-marker-alt"></i>
                             </a>
                         </div>
                     </div>
